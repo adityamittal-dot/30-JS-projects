@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number guessing game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+  <body>
+
+    <h1
+      class="text-5xl text-center bg-blue-500 text-center px-4 py-4 mx-2 my-2"
+      id="title">
+      INCREMENT - DECREMENT COUNTER
+    </h1>
+  <div class = "flex flex-col items-center justify-center my-4 mx-4">
+    <button
+      id="incrementButton"
+      class="bg-green-500 hover:bg-green-700 hover:scale-105 text-white font-bold py-2 px-4 rounded mx-2 my-2">
+      INCREMENT
+    </button>
+    <button
+      id="decrementButton"
+      class="bg-red-500 hover:bg-red-700 hover:scale-105 text-white font-bold py-2 px-4 rounded mx-2 my-2">
+      DECREMENT
+    </button>
+    <button
+      id="resetButton"
+      class="bg-brown-500 hover:bg-red-700 hover:scale-105 text-white font-bold py-2 px-4 rounded mx-2 my-2">
+      RESET
+    </button>
+    <h2
+      id="counterValue"
+      class="text-3xl text-center px-4 py-4 mx-2 my-2">
+      0
+    </h2>
+  </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
