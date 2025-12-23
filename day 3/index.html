@@ -4,12 +4,22 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>color changer</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
   <h1 
-  class="text-5xl bg-blue-500 text-center px-4 py-4 mx-2 my-2">
+  class="text-5xl text-center bg-blue-500 text-center px-4 py-4 mx-2 my-2"
+  id="title">
   COLOR CHANGER
   </h1>
+
+  <div class = "flex flex-col items-center justify-center my-4 mx-4">
+    <button 
+    class="bg-green-500 hover:bg-green-700 hover:scale-105 text-white font-bold py-2 px-4 rounded mx-2 my-2"
+    id="colorButton"
+    >CHANGE COLOR
+    </button>
+  </div>
 
   <script src="app.js"></script>
 </body>
