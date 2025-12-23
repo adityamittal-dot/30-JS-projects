@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number guessing game</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>Number Guessing Game</h1>
+    <h1 class="text-5xl bg-blue-500 text-center px-4 py-4 mx-2 my-2">NUMBER GUESSING GAME</h1>
+
+    <div class ="flex flex-col items-center justify-center my-4 mx-4">
+      <input type="number" 
+      class="border-2 border-gray-300 rounded-lg px-4 py-2 mx-2 my-2 text-xl" 
+      id="guessInput" 
+      placeholder="Enter your guess (1-100)" 
+      />
+      
+      <button id="guessButton" 
+      class="bg-green-500 hover:bg-green-700 hover:scale-105 text-white font-bold py-2 px-4 rounded mx-2 my-2" 
+      >GUESS</button>
+    </div>
 
     <script src="app.js"></script>
 </body>
