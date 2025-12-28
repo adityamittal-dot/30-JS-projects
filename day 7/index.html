@@ -6,8 +6,33 @@
     <title>Number guessing game</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-  <body class="bg-slate-900 flex flex-col items-center h-screen text-white">
+  <body class="bg-slate-200 flex flex-col items-center h-screen text-white">
     <h1 class="text-5xl font-bold mt-4 bg-blue-500">BMI CALCULATOR</h1>
+
+    <div>
+      <input 
+      type="number" 
+      id="weight" 
+      placeholder="Weight in kg" 
+      class="mt-10 p-3 rounded-lg text-black text-xl">
+      <br>
+      <input 
+      type="number" 
+      id="height" 
+      placeholder="Height in cm" 
+      class="mt-4 p-3 rounded-lg text-black text-xl">
+      <br>
+      <button 
+      id="calculateBtn" 
+      class="mt-6 bg-blue-500 px-6 py-3 rounded-lg text-white text-xl hover:bg-blue-600">
+      Calculate BMI
+      </button>
+      <br>
+      <div 
+      id="result" 
+      class="mt-6 text-3xl font-semibold text-black"> 
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
