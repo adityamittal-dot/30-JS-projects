@@ -1,24 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number guessing game</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-  <body class="bg-slate-200 flex flex-col items-center h-screen text-black">
-    <h1 
-    class="text-5xl font-bold mt-4 bg-blue-500">
-      TIP CALCULATOR
-    </h1>
-    <div>
-      <input id="billAmount" placeholder="Bill Amount"></input>
-      <input id="tipPercentage" placeholder="Tip Percentage"></input>
-      <button id="calculateTip">Calculate Tip</button>
 
-      <span id="tipResult"></span>
-    </div>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen text-slate-800">
+
+  <div class="bg-white w-80 p-6 rounded-2xl shadow-lg">
     
-    <script src="app.js"></script>
-  </body>
+    <h1 class="text-2xl font-bold text-center text-blue-600 mb-6">
+      Tip Calculator
+    </h1>
+
+    <div class="space-y-4">
+      
+      <input
+        id="billAmount"
+        type="number"
+        placeholder="Bill Amount"
+        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+
+      <input
+        id="tipPercentage"
+        type="number"
+        placeholder="Tip Percentage"
+        class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+      />
+
+      <button
+        id="calculateTip"
+        class="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition duration-200"
+      >
+        Calculate Tip
+      </button>
+
+      <span
+        id="tipResult"
+        class="block text-center text-lg font-medium text-green-600"
+      ></span>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
 </html>
