@@ -6,12 +6,18 @@
     <title>Number guessing game</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-  <body class="bg-slate-200 flex flex-col items-center h-screen text-white">
+  <body class="bg-slate-200 flex flex-col items-center h-screen text-black">
     <h1 
     class="text-5xl font-bold mt-4 bg-blue-500">
       TIP CALCULATOR
     </h1>
+    <div>
+      <input id="billAmount" placeholder="Bill Amount"></input>
+      <input id="tipPercentage" placeholder="Tip Percentage"></input>
+      <button id="calculateTip">Calculate Tip</button>
 
+      <span id="tipResult"></span>
+    </div>
     
     <script src="app.js"></script>
   </body>
