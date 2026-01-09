@@ -1,0 +1,23 @@
+const openModalBtn = document.getElementById("openModalBtn");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const modal = document.getElementById("modal");
+
+openModalBtn.addEventListener("click", () => {
+  modal.classList.remove("hidden");
+});
+
+closeModalBtn.addEventListener("click", () => {
+  modal.classList.add("hidden");
+});
+
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.add("hidden");
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modal.classList.add("hidden");
+  }
+});
