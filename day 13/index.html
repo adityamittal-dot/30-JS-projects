@@ -9,6 +9,28 @@
 
 <body class="min-h-screen flex items-center justify-center bg-gray-100">
 
+  <div class="relative w-[420px] rounded-xl overflow-hidden shadow-xl">
+
+    <div id = "carouselTrack"
+      class = "flex transition-transform duration=500 ease-in-out">
+
+      <img src="" class = "w-full object-cover" />
+      <img src="" class = "w-full object-cover" />
+      <img src="" class = "w-full object-cover" />
+      
+    </div>
+
+    <button id = "prevBtn"
+      class = "absolute left-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow">
+      ⬅
+    </button>
+
+    <button id="nextBtn"
+      class="absolute right-3 top-1/2 -translate-y-1/2 bg-white/70 hover:bg-white p-2 rounded-full shadow">
+      ➡
+    </button>
+
+  </div>
 
   <script src="app.js"></script>
 </body>
