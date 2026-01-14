@@ -7,7 +7,35 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
-<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+<body class="min-h-screen bg-sky-100 flex items-center justify-center">
+
+  <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+
+    <input 
+      type="text"
+      id="cityInput"
+      placeholder = "where u at?"
+      class="w-full p-2 border rounded mb-3 focus:outline-none focus:ring-2 focus:ring-sky-400"
+    />
+
+    <button 
+      id = "getWeatherBtn"
+      class = "w-full bg-sky-500 text-white py-2 rounded hover:bg-sky-600 transition"
+    >
+    Get Weather
+    </button>
+
+    <div id = "weatherInfo" class="mt-5 text-center hidden">
+      <h2 id="cityName" class="text-xl font-semibold"></h2>
+      <p id="temperature"></p>
+      <p id="condition"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+    </div>
+
+    <p id="error" class="text-red-500 text-center mt-4 hidden"></p>
+  </div>
+
 
   <script src="app.js"></script>
 </body>
